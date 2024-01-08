@@ -1,0 +1,23 @@
+li:hover{
+    background: #5a88ca; 
+    cursor: pointer;
+}
+
+li:hover a {
+    color:#FFF;
+
+}
+li a{
+    color: #6e6a6a;
+    font-size: 14px;
+    padding: 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.navbar,.container,li{
+    height: 60px;
+}
+a {
+    padding: unset;
+}
