@@ -1,60 +1,79 @@
-<div class="header-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="user-menu">
-                    <ul>
-                        <li><a routerLink="#"><i class="fa fa-user"></i> My Account</a></li>
-                        <li><a routerLink="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                        <li><a routerLink="cart"><i class="fa fa-user"></i> My Cart</a></li>
-                        <li><a routerLink="checkout"><i class="fa fa-user"></i> Checkout</a></li>
-                        <li><a routerLink="#"><i class="fa fa-user"></i> Login</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="header-right">
-                    <ul class="list-unstyled list-inline">
-                        <li class="dropdown dropdown-small">
-                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">USD</a></li>
-                                <li><a href="#">INR</a></li>
-                                <li><a href="#">GBP</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown dropdown-small">
-                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">French</a></li>
-                                <li><a href="#">German</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<header>
+  <div class="container d-flex flex-wrap">
+    <div class="col-md-8">
+      <div class="user-menu">
+        <ul class="nav me-auto">
+          <li class="nav-item">
+            <a routerLink="#"><i class="fa fa-user"></i> My Account</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="#"><i class="fa fa-heart"></i> Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="cart"><i class="fa fa-user"></i> My Cart</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="checkout"><i class="fa fa-user"></i> Checkout</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="#"><i class="fa fa-user"></i> Login</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</div> <!-- End header area -->
+
+    <div class="col-md-4">
+      <div class="header-right">
+        <ul class="nav">
+       
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="key">currency :</span><span class="value">USD </span >
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">INR</a></li>
+              <li><a class="dropdown-item" href="#">GBP</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="key">language :</span><span class="value">English </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+              <li><a class="dropdown-item" href="#">German</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- End header area -->
 
 <div class="site-branding-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="logo">
-                    <h1><a href="./"><img src="img/logo.png"></a></h1>
-                </div>
-            </div>
-            
-            <div class="col-sm-6">
-                <div class="shopping-item">
-                    <a routerLink="cart">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="logo">
+          <h1>
+            <a href="./"><img src="img/logo.png" /></a>
+          </h1>
         </div>
-    </div>
-</div> <!-- End site branding area -->
+      </div>
 
+      <div class="col-sm-6">
+        <div class="shopping-item">
+          <a routerLink="cart"
+            >Cart - <span class="cart-amunt">$100</span>
+            <i class="fa fa-shopping-cart"></i>
+            <span class="product-count">5</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End site branding area -->
