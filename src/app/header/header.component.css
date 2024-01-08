@@ -1,12 +1,12 @@
-header{
-    height: 42px;
+header {
+  height: 38.56px;
 }
 a {
   color: #888;
   font-size: 13px;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: #17a78b;
   text-decoration: underline;
 }
@@ -18,27 +18,77 @@ ul {
 header {
   background: none repeat scroll 0 0 #f4f4f4;
 }
-.dropdown-toggle{
-    border: none ;
+.dropdown-toggle {
+  border: none;
+  font-size: 14px;
+  color: #888;
 }
 .dropdown-toggle:hover,
-.dropdown-toggle:focus{
-    color: #17a78b;
+.dropdown-toggle:focus {
+  color: #17a78b;
   text-decoration: underline;
+}
+.dropdown-menu a {
+  color: unset;
+  text-decoration: unset;
+}
+.dropdown-menu {
+  min-width: 7rem;
+  border: none;
+  box-shadow: 6px 13px 12px 0px rgba(0, 0, 0, 0.1);
+  inset: 0px auto auto 23px !important;
+  border-radius: unset;
+  padding: unset;
+}
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+.logo:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.logo{
+    margin: 29px auto ;
+    box-sizing: border-box;
 
 }
-.dropdown-menu a{
-    color: unset;
-    text-decoration: unset;
+.cart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
-.dropdown-menu{
-    min-width: 6rem;
-    border: none;
-    box-shadow: 6px 13px 12px 0px rgba(0,0,0,0.1);
-    inset:0px auto auto 20px !important;
-    border-radius: unset;
-    padding: unset;
+.shopping-item {
+    width: fit-content;
+    height: 47px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 11px;
+    position: relative;
 }
-.dropdown-item:hover{
-    background-color: #F5F5F5;
+.shopping-item a{
+    font-size: 18px;
+    color: #666;
+}
+.cart-amount {
+    color: #5a88ca;
+    font-weight: 700;
+}
+.shopping-item:hover {
+    background: none repeat scroll 0 0 #5a88ca;
+    border-color: #5a88ca;
+}
+.shopping-item:hover a {
+    color: #fff;text-decoration: none
+}
+.shopping-item:hover .cart-amount {
+    color: #fff;
+}
+.product-count{
+    display: none;
+}
+.shopping-item:hover .product-count {
+    background: none repeat scroll 0 0 #000;
 }

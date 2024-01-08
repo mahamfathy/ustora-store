@@ -22,9 +22,9 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4" [ngStyle]="{'margin-top':'-4px'}">
       <div class="header-right">
-        <ul class="nav">
+        <ul class="nav d-flex align-items-center">
        
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,24 +53,22 @@
 </header>
   <!-- End header area -->
 
-<div class="site-branding-area">
+<div class="site-branding-area" [ngStyle]="{'height':'124px'}">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <div class="logo">
-          <h1>
-            <a href="./"><img src="img/logo.png" /></a>
-          </h1>
+        <div [ngClass]="'logo'">
+            <a><img routerLink="home" [src]="ustoraImage" /></a>
         </div>
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 cart-btn">
         <div class="shopping-item">
           <a routerLink="cart"
-            >Cart - <span class="cart-amunt">$100</span>
-            <i class="fa fa-shopping-cart"></i>
-            <span class="product-count">5</span></a
-          >
+            >Cart - <span class="cart-amount"> ${{price}}</span>
+            <i class="fa fa-shopping-cart" [ngStyle]="{'margin-left':'7px'}"></i>
+            <span class="product-count">{{count}}</span>
+        </a>
         </div>
       </div>
     </div>
