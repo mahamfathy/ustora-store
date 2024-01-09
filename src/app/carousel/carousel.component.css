@@ -1,0 +1,41 @@
+.product-item {
+  position: relative;
+}
+.header {
+  position: absolute;
+  top: 26%;
+  right: 24%;
+  z-index: 99;
+}
+::ng-deep ul.p-carousel-indicators li.p-carousel-indicator button.p-link {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #999999;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+::ng-deep ul.p-carousel-indicators li.p-carousel-indicator button.p-link:hover,
+::ng-deep ul.p-carousel-indicators li.p-carousel-indicator button.p-link:focus {
+  background-color: #1bd172;
+}
+
+::ng-deep .p-carousel-container {
+  /* width: 80%; */
+  /* margin:0 auto; */
+}
+
+::ng-deep .p-ripple {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+::ng-deep .p-ripple:hover {
+  background: #5a88ca;
+  color: #fff;
+  border-color: #5a88ca;
+  width: 32px;
+  height:  32px;
+  border-radius: 50%;
+}
+
