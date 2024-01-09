@@ -21,10 +21,7 @@
   background-color: #1bd172;
 }
 
-::ng-deep .p-carousel-container {
-  /* width: 80%; */
-  /* margin:0 auto; */
-}
+
 
 ::ng-deep .p-ripple {
   transition: background-color 0.3s ease, transform 0.3s ease;
