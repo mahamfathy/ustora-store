@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../../../src/fonts/Raleway-VariableFont_wght.ttf")
+    format("truetype");
+  /* Add more src lines for different font formats (e.g., woff, woff2) */
+}
+
+.one {
+  background-color: #262626;
+  padding: unset;
+  color: #999;
+  padding: 50px 100px 100px 100px;
+  font-weight: lighter;
+  font-size: 15px;
+  font-weight: 400;
+  height: 470px;
+}
+h2 {
+  margin: 0 0 15px;
+  height: 33px;
+  font-size: 30px;
+  font-weight: 100;
+  color: #fff;
+  font-family: Raleway, sans-serif !important;
+}
+a {
+  color: #999 !important;
+  padding: 5px 0 !important;
+  font-weight: 400;
+}
+li {
+  padding: 5px 0 !important;
+}
+a:hover {
+  color: #17a78b !important;
+  text-decoration: underline;
+}
+li {
+  border-bottom: 1px dotted #999;
+}
+span {
+  color: #5a88ca;
+}
+.ustara {
+  font-weight: 500;
+  font-family: unset;
+  color: #999;
+}
+button {
+  width: fit-content;
+  border-radius: unset;
+  background: none repeat scroll 0 0 #5a88ca;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  border: 1px solid #5a88ca;
+}
+button:hover {
+  background-color: #222222;
+  border-color: #6e6e6e;
+}
+input {
+  border-radius: unset;
+}
+.purchaseIcons {
+  width: 200px;
+  margin-left: -193px;
+}
+.purchaseIcons i {
+  color: #ffffff;
+}
+.footer-social a {
+  background: none repeat scroll 0 0 #5a88ca;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff !important;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  text-align: center;
+  width: 40px;
+  border: 1px solid #5a88ca;
+}
+
+.footer-social a:hover {
+  background-color: #222;
+  border-color: #666;
+  color: #17a78b !important;
+
+}
+footer {
+  height: 100%;
+}
+.two {
+  margin-top: 100px;
+  background-color: #000000;
+  margin-left: -100px;
+  width: 1348px;
+}
+.footer-bottom-area {
+  background: none repeat scroll 0 0 #000;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+
+#website{
+  color: #5a88ca !important;
+}
+#website:hover{
+  color: #17a78b !important;
+
+}
