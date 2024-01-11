@@ -1,0 +1,10 @@
+h2 a {
+  color: #5a88ca;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 0;
+}
+h2:hover a {
+  color: #17a78b;
+  text-decoration: underline;
+}
