@@ -2,9 +2,9 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import 'font-awesome/css/font-awesome.css';
-
 @import '../node_modules/animate.css/animate.min.css';
-
+@import 'owl.carousel/dist/assets/owl.carousel.css';
+@import 'owl.carousel/dist/assets/owl.theme.default.css';
 html,body{
 width: 100%;
 height: 100%;
@@ -951,7 +951,7 @@ td.actions div.coupon {
 }
 .cross-sells {
     float: left;
-    margin-right: 3%;
+    /* margin-right: 3%; */
     width: 57%;
 }
 .cart_totals {
@@ -967,12 +967,12 @@ td.actions div.coupon {
 }
 div.cart-collaterals ul.products {
     list-style: outside none none;
-    margin: 0 0 0 -30px;
+    /* margin: 0 0 0 -20px !important; */
     padding: 0;
 }
 div.cart-collaterals ul.products li.product {
     float: left;
-    margin-left: 30px;
+    margin-left: 11px;
     position: relative;
     width: 198px;
 }
@@ -1129,6 +1129,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .pagination > li > a, .pagination > li > span {
   color: #5a88ca !important;
 }
+
+
+/* 
 
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) { 
@@ -1337,4 +1340,4 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
         
       
         
-    }
+    } 

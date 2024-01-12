@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CarouselComponent } from '../carousel/carousel.component';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-latest-products',
   standalone: true,
