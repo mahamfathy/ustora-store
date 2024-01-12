@@ -10,13 +10,8 @@ import { ProductsService } from '../services/products.service';
   styleUrl: './shop.component.css',
 })
 export class ShopComponent {
-products:Product[]=[];
-constructor(private productService:ProductsService){
-this.productService.getAllProducts().then((productList:Product[])=>{
-  this.products= productList
-})
-
-}
-
-
+  products: Product[];
+  constructor(private productService: ProductsService) {
+    this.products = productService.getAllProducts();
+  }
 }

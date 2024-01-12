@@ -12,5 +12,6 @@ export const routes: Routes = [
     {path:"checkout",component:CheckoutComponent},
     {path:"cart",component:CartComponent},
     {path:"single-product",component:SingleProductComponent},
-    {path:"**",component:HomePageComponent,pathMatch:'full'}
+    {path:"**",component:HomePageComponent,pathMatch:'full'},
+    {path:"shop/:id",component:SingleProductComponent}
 ];
