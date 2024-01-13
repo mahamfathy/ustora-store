@@ -8,10 +8,10 @@ import { SingleProductComponent } from './single-product/single-product.componen
 export const routes: Routes = [
 
     {path:"home",component:HomePageComponent},
+    {path:"shop/:id",component:SingleProductComponent},
     {path:"shop",component:ShopComponent},
     {path:"checkout",component:CheckoutComponent},
     {path:"cart",component:CartComponent},
     {path:"single-product",component:SingleProductComponent},
-    {path:"**",component:HomePageComponent,pathMatch:'full'},
-    {path:"shop/:id",component:SingleProductComponent}
+    {path:"**",component:HomePageComponent,pathMatch:'full'}
 ];
