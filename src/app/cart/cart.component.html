@@ -33,6 +33,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @for (cartItem of cart.items; track cartItem.id) {
                                     <tr class="cart_item">
                                         <td class="product-remove">
                                             <a title="Remove this item" class="remove" href="#">×</a> 
@@ -43,25 +44,26 @@
                                         </td>
 
                                         <td class="product-name">
-                                            <a routerLink="single-product">Ship Your Idea</a> 
+                                            <a routerLink="single-product">{{cartItem.product.header}}</a> 
                                         </td>
 
                                         <td class="product-price">
-                                            <span class="amount">£15.00</span> 
+                                            <span class="amount">{{cartItem.product.price}}</span> 
                                         </td>
 
                                         <td class="product-quantity">
                                             <div class="quantity buttons_added">
                                                 <input type="button" class="minus" value="-">
-                                                <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                <label for="number">{{cartItem.quantity}}</label>
                                                 <input type="button" class="plus" value="+">
                                             </div>
                                         </td>
 
                                         <td class="product-subtotal">
-                                            <span class="amount">£15.00</span> 
+                                            <span class="amount">{{cart.totalPrices}}</span> 
                                         </td>
                                     </tr>
+                                }
                                     <tr>
                                         <td class="actions" colspan="6">
                                             <div class="coupon">

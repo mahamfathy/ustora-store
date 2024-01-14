@@ -115,4 +115,9 @@ export class ProductsService {
   
     return Promise.resolve(product);
 
-}}
+}
+getTotalProductsPrice(): number {
+  // Calculate the total price of all products and return it
+  return this.products.reduce((total, product) => total + product.price, 0);
+}
+}

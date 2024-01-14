@@ -86,9 +86,7 @@ header {
 .shopping-item:hover .cart-amount {
     color: #fff;
 }
-.product-count{
-    display: none;
-}
+
 .shopping-item:hover .product-count {
     background: none repeat scroll 0 0 #000;
 }
