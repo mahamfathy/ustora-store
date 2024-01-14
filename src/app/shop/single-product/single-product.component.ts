@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchProductsComponent } from '../search-products/search-products.component';
+import { SearchProductsComponent } from '../../search-products/search-products.component';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { Product } from '../shared/models/Product';
-import { ProductsService } from '../services/products.service';
+import { Product } from '../../shared/models/Product';
+import { ProductsService } from '../../services/products.service';
 @Component({
   selector: 'app-single-product',
   standalone: true,
