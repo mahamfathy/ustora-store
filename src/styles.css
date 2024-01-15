@@ -1022,8 +1022,9 @@ div.cart-collaterals ul.products li.product .price {
 .col2-set {
     margin-left: -30px;
     overflow: hidden;
+    display: flex;
 }
-.col-1, .col-2 {
+ .col-6 {
     float: left;
     margin-left: 30px;
     width: 360px;
@@ -1131,7 +1132,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 }
 
 
-/* 
+
 
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) { 

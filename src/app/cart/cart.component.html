@@ -60,7 +60,7 @@
                                         </td>
 
                                         <td class="product-subtotal">
-                                            <span class="amount">{{cart.totalPrices}}</span> 
+                                            <span class="amount">{{cartItem.price * cartItem.quantity}}</span> 
                                         </td>
                                     </tr>
                                 }
@@ -71,8 +71,9 @@
                                                 <input type="text" placeholder="Coupon code" value="" id="coupon_code" class="input-text" name="coupon_code">
                                                 <input type="submit" value="Apply Coupon" name="apply_coupon" class="button">
                                             </div>
+                                            
                                             <input type="submit" value="Update Cart" name="update_cart" class="button">
-                                            <input type="submit" value="Checkout" name="proceed" class="checkout-button button alt wc-forward">
+                                            <input type="submit" value="Checkout" name="proceed" class="checkout-button button alt wc-forward" routerLink="checkout">
                                         </td>
                                     </tr>
                                 </tbody>
