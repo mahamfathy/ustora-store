@@ -19,9 +19,9 @@
             <div class="col-md-3 col-sm-6">
                 <div class="single-shop-product">
                     <div class="product-upper">
-                        <img [src]="product.imageUrl" [alt]="product.imageName">
+                        <img [src]="product.src" [alt]="product.imageName">
                     </div>
-                    <h2><a routerLink="/shop/{{product.id}}">{{product.header}}</a></h2>
+                    <h2><a routerLink="/shop/{{product.id}}">{{product.name}}</a></h2>
                     <div class="product-carousel-price">
                         <ins>${{product.price.toFixed(2)}}</ins> <del>${{product.discount.toFixed(2)}}</del>
                     </div>  

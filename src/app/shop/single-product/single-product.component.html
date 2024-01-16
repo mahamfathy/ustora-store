@@ -28,7 +28,7 @@
             <div class="col-sm-6">
               <div class="product-images">
                 <div class="product-main-img">
-                  <img [src]="singleProduct?.imageUrl" alt="" />
+                  <img [src]="singleProduct?.src" alt="" />
                 </div>
 
                 <div class="product-gallery">
@@ -41,7 +41,7 @@
 
             <div class="col-sm-6">
               <div class="product-inner">
-                <h2 class="product-name">{{singleProduct?.header}}</h2>
+                <h2 class="product-name">{{singleProduct?.name}}</h2>
                 <div class="product-inner-price">
                   <ins>${{singleProduct?.price}}</ins> <del>${{singleProduct?.discount}}</del>
                 </div>

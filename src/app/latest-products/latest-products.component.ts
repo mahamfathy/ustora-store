@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { RouterLink } from '@angular/router';
+import { CartService } from '../services/cart.service';
+import { Product } from '../shared/models/Product';
 @Component({
   selector: 'app-latest-products',
   standalone: true,
@@ -13,7 +15,7 @@ export class LatestProductsComponent {
   images = [
     {
       id: 1,
-      name: 'Samsung gallaxy s-5 2015',
+      name: 'Samsung gallaxy',
       src: 'assets/product-1.jpg',
       imageName: 'image 1',
       price: 800,
@@ -45,21 +47,21 @@ export class LatestProductsComponent {
     },
     {
       id: 5,
-      name: 'Sony Smart Air Condtion',
+      name: 'Sony Smart',
       src: 'assets/product-5.jpg',
       imageName: 'image 5',
       price: 900,
-      discount: 1000,
+      discount: 950,
     },
     {
       id: 6,
-      name: 'Samsung gallaxy note 4',
+      name: 'Samsung gallaxy',
       src: 'assets/product-6.jpg',
       imageName: 'image 6',
       price: 700,
       discount: 800,
     },
-    // Add more objects as needed
+   
   ];
   responsiveOptions = [
     {
@@ -67,6 +69,10 @@ export class LatestProductsComponent {
       numVisible: 5,
       numScroll: 5,
     },
-    // ... other responsive options
   ];
+  constructor(private cartService:CartService){}
+
+  addToCart(item:Product){
+    this.cartService.addToCart(item)
+  }
 }

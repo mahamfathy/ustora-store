@@ -40,11 +40,11 @@
                                         </td>
 
                                         <td class="product-thumbnail">
-                                            <a routerLink="single-product"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" [src]="cartItem.product.imageUrl"></a>
+                                            <a routerLink="single-product"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" [src]="cartItem.imageUrl"></a>
                                         </td>
 
                                         <td class="product-name">
-                                            <a routerLink="single-product">{{cartItem.product.header}}</a> 
+                                            <a routerLink="single-product">{{cartItem.product.name}}</a> 
                                         </td>
 
                                         <td class="product-price">
@@ -73,7 +73,7 @@
                                             </div>
                                             
                                             <input type="submit" value="Update Cart" name="update_cart" class="button">
-                                            <input type="submit" value="Checkout" name="proceed" class="checkout-button button alt wc-forward" routerLink="checkout">
+                                            <input type="submit" value="Checkout" name="proceed" class="checkout-button button alt wc-forward" (click)="checkout()">
                                         </td>
                                     </tr>
                                 </tbody>

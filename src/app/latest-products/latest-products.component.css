@@ -1,0 +1,6 @@
+::ng-deep .p-link{
+display: none;
+}
+.add-to-cart-link{
+    cursor: pointer;
+}
