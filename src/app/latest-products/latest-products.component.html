@@ -1,4 +1,4 @@
-<div class="maincontent-area">
+<!-- <div class="maincontent-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
@@ -100,5 +100,25 @@
             </div>
         </div>
     </div>
-  </div> <!-- End main content area -->
+  </div>  -->
+  <!-- End main content area -->
   
+  <p-carousel [value]="images" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+  <ng-template let-image pTemplate="item">
+      <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+        <div class="product-f-image mb-3">
+            <img [src]=" image.src" [alt]="image.imageName" class="w-6 shadow-2">
+            <div class="product-hover">
+                <a routerLink="cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                <a routerLink="single-product" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+            </div>
+        </div>
+          <div>
+              <h4 class="mb-1">{{ image.name }}</h4>
+              <h6 class="mt-0 mb-3">{{ '$' + image.price }}</h6> <del>{{image.discount}}</del>
+              <div class="mt-5 flex align-items-center justify-content-center gap-2">
+          </div>
+          </div>
+      </div>
+  </ng-template>
+</p-carousel> 
