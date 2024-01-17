@@ -1,4 +1,5 @@
 
+
 li:hover{
     background: #5a88ca; 
     cursor: pointer;
@@ -22,3 +23,25 @@ li a{
 a {
     padding: unset;
 }
+/* .navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    overflow: auto;
+    height: 60px; 
+
+  } */
+  
+  /* Style for the list items inside the navbar */
+  /* .navbar-nav {
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+   */
