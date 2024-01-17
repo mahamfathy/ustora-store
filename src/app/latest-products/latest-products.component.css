@@ -4,13 +4,13 @@ display: none;
 .add-to-cart-link{
     cursor: pointer;
 }
-::ng-deep .p-carousel-prev{
+::ng-deep .single-product .p-carousel-prev {
     position: absolute;
     left: 70px;
     position: absolute;
     top: 45%;
 }
-::ng-deep .p-carousel-next{
+::ng-deep .single-product .p-carousel-next{
     position: absolute;
     right: 70px;
     position: absolute;

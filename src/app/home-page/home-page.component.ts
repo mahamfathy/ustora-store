@@ -46,8 +46,8 @@ export class HomePageComponent implements OnInit {
   responsiveOptions = [
     {
       breakpoint: '1600px',
-      numVisible: 6,
-      numScroll: 6,
+      numVisible: 4,
+      numScroll: 1,
     },
   ];
   constructor() {}

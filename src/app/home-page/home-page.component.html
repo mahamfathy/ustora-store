@@ -44,7 +44,8 @@
   </div>
 </div>
 <!-- End main content area -->
-  <p-carousel [value]="brands" [numVisible]="6"  showIndicator="true" >
+<div class="container">
+  <p-carousel [value]="brands" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions" >
     <ng-template let-brand pTemplate="item">
         <div class="border-1 surface-border border-round m-2 text-center py-5 px-3 single-product">
           <div class="product-f-image mb-3">
@@ -53,6 +54,7 @@
           </div>
     </ng-template>
   </p-carousel> 
+</div>
 
 <div class="product-widget-area">
   <div class="zigzag-bottom"></div>
