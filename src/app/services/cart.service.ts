@@ -27,4 +27,17 @@ export class CartService {
   getTotalPrice(): number {
     return this.cart.items.reduce((total, item) => total + item.product.price, 0);
   }
+  removeItem(item: Product): void {
+    const index = this.cart.items.findIndex(cartItem => cartItem.product === item);
+
+    if (index !== -1) {
+      this.cart.items.splice(index, 1);
+      this.cartUpdateSubject.next();
+    }
+  }
+  clearCart(){
+    this.cart.items=[];
+    this.cartUpdateSubject.next()
+
+  }
 }

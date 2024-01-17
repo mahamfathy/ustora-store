@@ -3,6 +3,7 @@ import { SearchProductsComponent } from '../search-products/search-products.comp
 import { Router, RouterLink } from '@angular/router';
 import { Cart } from '../shared/models/Cart';
 import { CartService } from '../services/cart.service';
+import { Product } from '../shared/models/Product';
 
 @Component({
   selector: 'app-cart',
@@ -22,5 +23,17 @@ setCart(){
 }
 checkout(){
   this.router.navigate(['checkout'])
+}
+removeItem(itemId: number): void {
+  const itemToRemove = this.cart.items.find(item => item.product.id === itemId);
+
+  if (itemToRemove) {
+    this.cartService.removeItem(itemToRemove.product);
+    this.setCart(); // Update the cart after removing the item
+  }
+}
+updateCart(e:Event):void{
+  e.preventDefault();
+this.cartService.clearCart()
 }
 }

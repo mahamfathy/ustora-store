@@ -1149,6 +1149,7 @@ table.shop_table td.product-remove a {
   display: inline-block;
   padding: 0 5px 2px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 table.shop_table td.product-remove a:hover {

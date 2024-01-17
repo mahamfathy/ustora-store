@@ -4,14 +4,14 @@
 ::ng-deep .carouselCContainer .p-carousel-prev{
 position: absolute;
 left: 50px;
-bottom: -52px;
+/* bottom: -52px; */
 z-index: 99;
 
 }
 ::ng-deep .carouselCContainer .p-carousel-next{
 position: absolute;
 right: 130px;
-bottom: -52px;
+/* bottom: -52px; */
 z-index: 99;
 
 }

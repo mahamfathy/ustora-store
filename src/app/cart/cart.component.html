@@ -36,15 +36,15 @@
                                     @for (cartItem of cart.items; track cartItem.id) {
                                     <tr class="cart_item">
                                         <td class="product-remove">
-                                            <a title="Remove this item" class="remove" href="#">×</a> 
+                                            <a title="Remove this item" class="remove" (click)="removeItem(cartItem.product.id)">×</a> 
                                         </td>
 
                                         <td class="product-thumbnail">
-                                            <a routerLink="single-product"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" [src]="cartItem.imageUrl"></a>
+                                            <a [routerLink]="['/single-product', cartItem.product.id]"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" [src]="cartItem.imageUrl"></a>
                                         </td>
 
                                         <td class="product-name">
-                                            <a routerLink="single-product">{{cartItem.product.name}}</a> 
+                                            <a [routerLink]="['/single-product', cartItem.product.id]">{{cartItem.product.name}}</a> 
                                         </td>
 
                                         <td class="product-price">
@@ -72,7 +72,7 @@
                                                 <input type="submit" value="Apply Coupon" name="apply_coupon" class="button">
                                             </div>
                                             
-                                            <input type="submit" value="Update Cart" name="update_cart" class="button">
+                                            <input type="submit" value="Update Cart" name="update_cart" class="button" (click)="updateCart($event)">
                                             <input type="submit" value="Checkout" name="proceed" class="checkout-button button alt wc-forward" (click)="checkout()">
                                         </td>
                                     </tr>
