@@ -51,49 +51,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-area {
-  background: none repeat scroll 0 0 #f4f4f4;
-}
-.header-area a {
-  color: #888;
-}
-.user-menu ul {
-  list-style: outside none none;
-  margin: 0;
-  padding: 0;
-}
-.user-menu li {
-  display: inline-block;
-}
-.user-menu li a {
-  display: block;
-  font-size: 13px;
-  margin-right: 5px;
-  padding: 10px;
-}
-.user-menu li a i.fa {
-  margin-right: 5px;
-}
-.header-right ul.list-inline {
-  margin: 0;
-  text-align: right;
-}
-.header-right ul.list-inline li a {
-  display: block;
-  padding: 9px;
-}
-.header-right ul.list-inline li ul a {
-  padding: 5px 15px;
-}
-.header-right ul.list-inline li ul {
-  border: medium none;
-  border-radius: 0;
-  left: 50%;
-  margin-left: -50px;
-  min-width: 100px;
-  text-align: center;
-}
-
 .mainmenu-area {
   background: none repeat scroll 0 0 #fbfbfb;
   font-family: "Roboto Condensed", sans-serif;
@@ -453,14 +410,14 @@ body {
   color: #fff;
   display: block;
   font-size: 16px;
-  left: 10%;
+  left: 5%;
   margin: 0;
   padding: 10px;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #5a88ca;
-  width: 80%;
+  width: 90%;
   z-index: 99;
   transition: 0.4s;
 }
@@ -508,15 +465,15 @@ body {
 /* .single-product:hover {} */
 .single-product:hover .product-hover a.add-to-cart-link {
   top: 20%;
-  height: fit-content;
-  width: fit-content;
-  font-size: 14px;
+  /* height: fit-content; */
+  /* width: fit-content; */
+  font-size: 12px;
 }
 .single-product:hover .product-hover a.view-details-link {
   bottom: 32%;
-  height: fit-content;
-  width: fit-content;
-  font-size: 14px;
+  /* height: fit-content; */
+  /* width: fit-content; */
+  font-size: 12px;
 }
 .single-product:hover .product-hover:after {
   left: 0;
@@ -572,6 +529,8 @@ body {
 .maincontent-area {
   padding-bottom: 50px;
   padding-top: 20px;
+  position: relative;
+  max-height: 425px;
 }
 
 .product-wid-title {

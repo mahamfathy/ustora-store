@@ -44,36 +44,15 @@
   </div>
 </div>
 <!-- End main content area -->
-
-
-
-
-<div class="brands-area">
-  <div class="zigzag-bottom"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="brand-wrapper">
-          <div class="brand-list">
-            <img src="assets/brand1.png" alt="" />
-            <img src="assets/brand2.png" alt="" />
-            <img src="assets/brand3.png" alt="" />
-            <img src="assets/brand4.png" alt="" />
-            <img src="assets/brand5.png" alt="" />
-            <img src="assets/brand6.png" alt="" />
-            <img src="assets/brand1.png" alt="" />
-            <img src="assets/brand2.png" alt="" />
+  <p-carousel [value]="brands" [numVisible]="6"  showIndicator="true" >
+    <ng-template let-brand pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3 single-product">
+          <div class="product-f-image mb-3">
+              <img [src]=" brand.src" [alt]="brand.imageName" class="w-6 shadow-2">
+           </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End brands area -->
-
-
-
-
+    </ng-template>
+  </p-carousel> 
 
 <div class="product-widget-area">
   <div class="zigzag-bottom"></div>

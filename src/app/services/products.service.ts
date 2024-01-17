@@ -103,6 +103,58 @@ export class ProductsService {
       discount: 900,
     },
   ];
+
+  carousel:Product[]=[
+      {
+      id: 1,
+      name: 'Samsung gallaxy',
+      src: 'assets/product-1.jpg',
+      imageName: 'image 1',
+      price: 800,
+      discount: 900,
+    },
+    {
+      id: 2,
+      name: 'Nokia Lumia 1320',
+      src: 'assets/product-2.jpg',
+      imageName: 'image 2',
+      price: 1100,
+      discount: 1500,
+    },
+    {
+      id: 3,
+      name: 'LG Leon 2015',
+      src: 'assets/product-3.jpg',
+      imageName: 'image 3',
+      price: 200,
+      discount: 500,
+    },
+    {
+      id: 4,
+      name: 'Sony microsoft',
+      src: 'assets/product-4.jpg',
+      imageName: 'image 4',
+      price: 550,
+      discount: 700,
+    },
+    {
+      id: 5,
+      name: 'Sony Smart',
+      src: 'assets/product-5.jpg',
+      imageName: 'image 5',
+      price: 900,
+      discount: 950,
+    },
+    {
+      id: 6,
+      name: 'Samsung gallaxy',
+      src: 'assets/product-6.jpg',
+      imageName: 'image 6',
+      price: 700,
+      discount: 800,
+    },
+   
+  ]
   constructor() {}
 
   getAllProducts(): Product[] {
@@ -117,7 +169,9 @@ export class ProductsService {
 
 }
 getTotalProductsPrice(): number {
-  // Calculate the total price of all products and return it
   return this.products.reduce((total, product) => total + product.price, 0);
+}
+getCarouselInfo():Product[]{
+  return this.carousel
 }
 }

@@ -22,7 +22,7 @@ export class SingleProductComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
-      this.productId = +params['id']; // Convert to number
+      this.productId = +params['id']; 
       this.fetchSingleProduct();
     });
   }
