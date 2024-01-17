@@ -5,10 +5,9 @@
                 <div class="mb-3">
                     <img [src]="carousel.imageUrl" [alt]="carousel.imageName" class="product-image" />
                 </div>
-            
                 <div class="caption-group header">
                     <h2 class="caption title">
-                       {{carousel.header}}
+                       {{carousel.header}} <span class="primary">{{carousel.greenSpan}} <strong>{{carousel.greenStrong}}</strong></span>
                     </h2>
                     <h4 class="caption subtitle">{{carousel.paragraph}}</h4>
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>

@@ -1,19 +1,17 @@
 .product-item {
   position: relative;
 }
-::ng-deep .carouselCContainer .p-carousel-prev{
-position: absolute;
-left: 50px;
-/* bottom: -52px; */
-z-index: 99;
+::ng-deep .carouselCContainer .p-carousel-prev {
+  position: absolute;
+  left: 50px;
 
+  z-index: 99;
 }
-::ng-deep .carouselCContainer .p-carousel-next{
-position: absolute;
-right: 130px;
-/* bottom: -52px; */
-z-index: 99;
+::ng-deep .carouselCContainer .p-carousel-next {
+  position: absolute;
+  right: 130px;
 
+  z-index: 99;
 }
 .header {
   position: absolute;
@@ -35,8 +33,6 @@ z-index: 99;
   background-color: #1bd172;
 }
 
-
-
 ::ng-deep .p-ripple {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -46,7 +42,6 @@ z-index: 99;
   color: #fff;
   border-color: #5a88ca;
   width: 32px;
-  height:  32px;
+  height: 32px;
   border-radius: 50%;
 }
-

@@ -7,7 +7,7 @@ import { CarouselService } from '../services/carousel.service';
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CarouselModule, ButtonModule,],
+  imports: [CarouselModule, ButtonModule],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.css',
 })
