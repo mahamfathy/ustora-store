@@ -4,10 +4,11 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Product } from '../../shared/models/Product';
 import { ProductsService } from '../../services/products.service';
 import { CartService } from '../../services/cart.service';
+import { LatestProductsComponent } from '../../latest-products/latest-products.component';
 @Component({
   selector: 'app-single-product',
   standalone: true,
-  imports: [SearchProductsComponent, RouterLink],
+  imports: [SearchProductsComponent, RouterLink,LatestProductsComponent],
   templateUrl: './single-product.component.html',
   styleUrls: ['./single-product.component.css'],
 })

@@ -21,7 +21,7 @@
                     <div class="product-upper">
                         <img [src]="product.src" [alt]="product.imageName">
                     </div>
-                    <h2><a routerLink="/shop/{{product.id}}">{{product.name}}</a></h2>
+                    <h2  class="text-cut"  data-bs-toggle="tooltip" data-bs-placement="top" [title]="product.name"><a routerLink="/shop/{{product.id}}">{{product.name}}</a></h2>
                     <div class="product-carousel-price">
                         <ins>${{product.price.toFixed(2)}}</ins> <del>${{product.discount.toFixed(2)}}</del>
                     </div>  
