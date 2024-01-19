@@ -21,7 +21,7 @@
         <div class="col-md-8">
           <div class="product-content-right">
             <div class="woocommerce">
-              <div class="alert alert-info">
+              <div class="woocommerce-info">
                 Returning customer?
                 <a
                   class="showlogin"
@@ -43,11 +43,11 @@
                 </p>
         
                 <div class="row">
-                  <div class="col-md-6">
+                  <div >
                     <label for="username" class="form-label">Username or email <span class="text-danger">*</span></label>
                     <input type="text" id="username" name="username" class="form-control">
                   </div>
-                  <div class="col-md-6">
+                  <div>
                     <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
                     <input type="password" id="password" name="password" class="form-control">
                   </div>
@@ -55,17 +55,17 @@
         
                 <div class="form-check">
                   <input type="checkbox" value="forever" id="rememberme" name="rememberme" class="form-check-input">
-                  <label class="form-check-label" for="rememberme">Remember me</label>
+                  <label class="form-check-label inline" for="rememberme">Remember me</label>
                 </div>
         
                 <div class="mt-3">
                   <input type="submit" value="Login" name="login" class="btn btn-primary">
-                  <a href="#" class="lost_password">Lost your password?</a>
+                  <a href="#" class="lost_password d-block">Lost your password?</a>
                 </div>
         
               </form>
         
-              <div class="alert alert-info mt-3">
+              <div class="woocommerce-info mt-3">
                 Have a coupon?
                 <a
                   class="showcoupon"
@@ -81,10 +81,10 @@
         
               <form id="coupon-collapse-wrap" method="post" class="checkout_coupon collapse mt-3">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="mb-2">
                     <input type="text" value="" id="coupon_code" placeholder="Coupon code" class="form-control" name="coupon_code">
                   </div>
-                  <div class="col-md-6">
+                  <div>
                     <input type="submit" value="Apply Coupon" name="apply_coupon" class="btn btn-primary">
                   </div>
                 </div>
