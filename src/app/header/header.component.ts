@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CartService } from '../services/cart.service';
 import { Product } from '../shared/models/Product';
-import { ProductsService } from '../services/products.service';
 
 @Component({
   selector: 'app-header',
@@ -16,21 +15,6 @@ export class HeaderComponent implements OnInit {
   ustoraImage: string = 'assets/logo.png';
   totalPrice: number = 0;
   count: number = 0;
-
-  // constructor(private cartService: CartService) {}
-
-  // ngOnInit(): void {
-  //   this.updateTotalPrice(); // Initialize total price
-  //   this.cartService.getCartUpdateObservable().subscribe(() => {
-  //     this.updateTotalPrice(); // Update total price whenever the cart is updated
-  //   });
-  // }
-
-  // private updateTotalPrice(): void {
-  //   this.totalPrice = this.cartService.getTotalPrice();
-  //   this.count = this.cartService.getCart().items.length;
-  // }
-
  
   constructor(private cartService: CartService) {}
 

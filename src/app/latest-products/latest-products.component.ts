@@ -13,7 +13,7 @@ import { ProductsService } from '../services/products.service';
   styleUrl: './latest-products.component.css',
 })
 export class LatestProductsComponent implements OnInit{
-  images:Product[] = [];
+  products:Product[] = [];
   responsiveOptions = [
     {
       breakpoint: '1600px',
@@ -23,7 +23,7 @@ export class LatestProductsComponent implements OnInit{
   ];
   constructor(private cartService:CartService,private productService:ProductsService){}
   ngOnInit(): void {
-    this.images=this.productService.getCarouselInfo()
+    this.products=this.productService.getCarouselInfo()
   }
 
   addToCart(item:Product){

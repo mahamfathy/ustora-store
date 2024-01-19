@@ -11,7 +11,6 @@ export const routes: Routes = [
   { path: 'shop', component: ShopComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'single-product', component: SingleProductComponent },
   { path: 'single-product/:id', component: SingleProductComponent },
   { path: '**', component: HomePageComponent, pathMatch: 'full' },
 ];

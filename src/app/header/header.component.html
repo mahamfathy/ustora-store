@@ -75,7 +75,6 @@
       </div>
 
       <div class="col-sm-6 cart-btn">
-        @if (count>0) {
         <div class="shopping-item">
           <a routerLink="cart"
             >Cart -
@@ -86,10 +85,11 @@
               class="fa fa-shopping-cart"
               [ngStyle]="{ 'margin-left': '7px' }"
             ></i>
-            <span class="product-count" >{{ count }} </span>
+            @if (count>0) {
+            <span class="product-count">{{ count }} </span>
+            }
           </a>
         </div>
-      }
       </div>
     </div>
   </div>
