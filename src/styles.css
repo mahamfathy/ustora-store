@@ -1,6 +1,69 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "font-awesome/css/font-awesome.css";
+
+/* src/styles.css */
+
+/* Titillium Web */
+@font-face {
+  font-family: 'Titillium Web';
+      src: url('/assets/fonts/TitilliumWeb/TitilliumWeb-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+      src: url('/assets/fonts/TitilliumWeb/TitilliumWeb-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+      src: url('/assets/fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+      src: url('/assets/fonts/TitilliumWeb/TitilliumWeb-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+      src: url('/assets/fonts/TitilliumWeb/TitilliumWeb-Bold.ttf') format('truetype');
+}
+
+/* Roboto Condensed */
+@font-face {
+  font-family: 'Roboto Condensed';
+      src: url('/assets/fonts/RobotoCondensed/RobotoCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+      src: url('/assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+      src: url('/assets/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf') format('truetype');
+}
+
+/* Raleway */
+@font-face {
+  font-family: 'Raleway';
+      src: url('/assets/fonts/Raleway/Raleway-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+      src: url('/assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
 html,
 body {
   width: 100%;
@@ -54,6 +117,7 @@ h6 {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-family: robot;
 }
 
 .mainmenu-area {
@@ -436,6 +500,7 @@ body {
   font-weight: 700;
   margin-right: 5px;
   text-decoration: none;
+  font-size: 13px;
 }
 .product-hover a i.fa {
   margin-right: 5px;
@@ -759,7 +824,7 @@ ol.slide-indicators li.active {
 .product-bit-title h2 {
   font-family: raleway;
   font-size: 50px;
-  font-weight: 200;
+  font-weight: 100;
   margin: 0;
   padding: 50px 0;
   color: #fff;
@@ -1210,7 +1275,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 }
 
 .single-shop-product h2 {
-  font-size: 20px !important;
+  font-size: 19px ;
   margin: 10px 0;
 }
 .product-option-shop {
