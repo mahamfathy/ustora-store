@@ -15,7 +15,6 @@ import { NavComponent } from './nav/nav.component';
     NavComponent,
     HeaderComponent,
     FooterComponent,
-    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
