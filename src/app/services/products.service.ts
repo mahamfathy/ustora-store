@@ -10,7 +10,7 @@ export class ProductsService {
 
   ];
 
-  carousel:Product[]= this.products.slice(0,6)
+  carousel:Product[]= []
   constructor() {}
 
  async getAllProducts():Promise<Product[]> {
@@ -27,7 +27,10 @@ export class ProductsService {
 getTotalProductsPrice(): number {
   return this.products.reduce((total, product) => total + product.price, 0);
 }
-getCarouselInfo():Product[]{
-  return this.carousel
-}
-}
+async getCarouselInfo(): Promise<Product[]> {
+  if (this.carousel.length === 0) {
+    const allProducts = await this.getAllProducts();
+    this.carousel = allProducts.slice(0, 6);
+  }
+  return this.carousel;
+}}

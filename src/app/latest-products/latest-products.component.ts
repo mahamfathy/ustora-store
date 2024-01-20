@@ -23,7 +23,7 @@ export class LatestProductsComponent implements OnInit{
   ];
   constructor(private cartService:CartService,private productService:ProductsService){}
   ngOnInit(): void {
-    this.products=this.productService.getCarouselInfo()
+    this.productService.getCarouselInfo().then(carousel=>this.products=carousel)
   }
 
   addToCart(item:Product){
