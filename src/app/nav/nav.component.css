@@ -1,14 +1,5 @@
 
 
-li:hover{
-    background: #5a88ca; 
-    cursor: pointer;
-}
-
-li:hover a {
-    color:#FFF;
-
-}
 li a{
     color: #6e6a6a;
     font-size: 14px;
@@ -23,25 +14,12 @@ li a{
 a {
     padding: unset;
 }
-/* .navbar {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    overflow: auto;
-    height: 60px; 
-
-  } */
-  
-  /* Style for the list items inside the navbar */
-  /* .navbar-nav {
-    display: flex;
-    justify-content: space-around; 
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar-light .navbar-nav .nav-item.active,
+.navbar-light .navbar-nav .nav-item:hover {
+  background: #5a88ca;
+  color: #fff !important;
   }
-  
-  .nav-item {
-    margin: 0;
+.navbar-light .navbar-nav .nav-item.active a,
+.navbar-light .navbar-nav .nav-item:hover a {
+  color: #fff !important;
   }
-   */

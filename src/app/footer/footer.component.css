@@ -9,7 +9,7 @@
   background-color: #262626;
   padding: unset;
   color: #999;
-  padding: 50px 100px 100px 100px;
+  padding: 50px 100px 0px 100px;
   font-weight: lighter;
   font-size: 15px;
   font-weight: 400;
@@ -112,5 +112,13 @@ footer {
 }
 #website:hover{
   color: #17a78b !important;
+
+}
+@media only screen and (max-width: 767px) {
+
+
+  .one{
+    padding: 0px 15px !important;
+  }
 
 }
