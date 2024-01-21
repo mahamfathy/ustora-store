@@ -9,14 +9,13 @@
   background-color: #262626;
   padding: unset;
   color: #999;
-  padding: 50px 100px 0px 100px;
   font-weight: lighter;
   font-size: 15px;
   font-weight: 400;
   height: 470px;
 }
 h2 {
-  margin: 0 0 15px;
+  margin: 0 0 40px;
   height: 33px;
   font-size: 30px;
   font-weight: 100;
@@ -89,16 +88,13 @@ input {
   background-color: #222;
   border-color: #666;
   color: #17a78b !important;
-
 }
 footer {
   height: 100%;
 }
 .two {
-  margin-top: 100px;
   background-color: #000000;
-  margin-left: -100px;
-  width: 1348px;
+  width: 100%;
 }
 .footer-bottom-area {
   background: none repeat scroll 0 0 #000;
@@ -106,19 +102,15 @@ footer {
   padding-bottom: 40px;
 }
 
-
-#website{
+#website {
   color: #5a88ca !important;
 }
-#website:hover{
+#website:hover {
   color: #17a78b !important;
-
 }
-@media only screen and (max-width: 767px) {
-
-
-  .one{
-    padding: 0px 15px !important;
-  }
-
+.mb-4{
+  margin-bottom: unset !important;
+}
+.footer-bottom-area .col-md-5 p{
+  width: max-content !important;
 }

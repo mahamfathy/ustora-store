@@ -2,22 +2,45 @@
   position: relative;
 }
 ::ng-deep .carouselCContainer .p-carousel-prev {
-  position: absolute;
   left: 50px;
-
   z-index: 99;
+
+}
+::ng-deep .carouselCContainer .p-carousel-next,
+::ng-deep .carouselCContainer .p-carousel-prev
+{
+  width: 32px;
+  height: 32px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-25%);
+  -moz-transition: all 0.45s ease;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  -ms-transition: all 0.45s ease;
+  transition: all 0.45s ease;
 }
 ::ng-deep .carouselCContainer .p-carousel-next {
-  position: absolute;
-  right: 130px;
-
+  right: 120px;
   z-index: 99;
 }
-.header {
-  position: absolute;
-  top: 26%;
-  right: 24%;
-  z-index: 99;
+
+::ng-deep .carouselCContainer:hover .p-carousel-next {
+  right: 100px;
+
+}
+::ng-deep .carouselCContainer:hover .p-carousel-prev {
+  left: 20px;
+
+}
+
+::ng-deep .carouselCContainer li.p-carousel-indicator{
+  display: flex  !important;
 }
 ::ng-deep ul.p-carousel-indicators li.p-carousel-indicator button.p-link {
   width: 15px;

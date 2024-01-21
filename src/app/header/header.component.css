@@ -1,5 +1,5 @@
 header {
-  height: 38.56px;
+  height: auto;
 }
 a {
   color: #888;
@@ -15,8 +15,13 @@ ul {
   padding: 10px;
   text-align: center;
 }
-header {
+.row{
+  width: auto;
+}
+.row .container{
   background: none repeat scroll 0 0 #f4f4f4;
+  justify-content: center;
+  
 }
 .dropdown-toggle {
   border: none;
@@ -89,4 +94,9 @@ header {
 
 .shopping-item:hover .product-count {
     background: none repeat scroll 0 0 #000;
+}
+@media only screen and (max-width: 767px) {
+  .nav{
+    margin-left:0px !important;
+  }
 }
