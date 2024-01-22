@@ -13,8 +13,11 @@
 
 <div class="single-product-area">
     <div class="zigzag-bottom"></div>
+@defer (on viewport) {
+
     <div class="container">
         <div class="row">
+
             @for (product of products; track product.id) {
             <div class="col-md-3 col-sm-6">
                 <div class="single-shop-product">
@@ -32,7 +35,7 @@
                 </div>
             </div>
         }
-            
+    
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
                 <nav aria-label="Page navigation example">
@@ -57,4 +60,21 @@
             </div>
         </div>
     </div>
-</div>
+</div>}
+ @placeholder {
+    <p class="d-flex justify-content-center align-items-center w-3">Please wait...</p>
+} @loading (minimum 1000ms) {
+    <div class="text-center">
+    <p class="d-flex justify-content-center align-items-center w-3">Please wait...</p>
+
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+} @error {
+    <div class="d-flex justify-content-center align-items-center w-3">
+        <p>Make Sure to write a command in your cmd</p>
+        <p>json-server --watch db.json</p>
+     </div>
+
+}
