@@ -1662,11 +1662,11 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     width: 100%;
   }
   .col-md-8 .user-menu {
-    width: 95%;
-  }
-  .user-menu {
+    width: 80%;
     padding-left: 23px !important;
+
   }
+ 
 
   .checkout #customer_details {
     flex-direction: column;
