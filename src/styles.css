@@ -1668,6 +1668,9 @@ padding-left: 25px;
   .one{
     height: fit-content !important;
   }
+  .flex-wrap .col-md-8{
+    width: 100%;
+  }
   .col-md-8 .user-menu{
     width: 95%;
   }
