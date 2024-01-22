@@ -89,8 +89,7 @@ body {
   margin: 0 auto 15px;
 }
 .user-menu{
-  width: 77%;
-  padding-left: 110px !important;
+  width: 100%;
 }
 a:focus {
   outline: 0px solid;
@@ -1333,7 +1332,7 @@ padding-left: 15px;
   .flex-wrap .col-md-8{
     flex-direction: row;
     display: flex;
-    width: 85% !important;
+    width: 57% !important;
     justify-content: center;
   }
   .flex-wrap .col-md-4{
@@ -1416,7 +1415,7 @@ padding-left: 15px;
 
 /* Mobile Layout: 320px. */
 @media only screen  and (max-width: 767px) {
-.text-cut{
+.single-shop-product .text-cut{
   text-overflow: unset;
   overflow: unset;
   height: unset;
@@ -1655,18 +1654,33 @@ padding-left: 25px;
   .one{
     height: fit-content !important;
   }
+  .col-md-8 .user-menu{
+    width: 85%;
+  }
   .user-menu{
     width: 100%;
     padding-left: 23px !important;
 
   }
+  .checkout #customer_details{
+    flex-direction: column;
+  }
+  #customer_details .col-6{
+    width: 95% !important;
+  }
 }
 /* Wide Mobile Layout: 480px. */
-@media only screen  and (max-width: 766px) {
+@media only screen  and (max-width: 576px) {
 .footer-bottom-area{
   flex-direction: column ;
   padding: 10px 16px!important;
   width: 100%;
+}
+.user-menu .nav{
+  justify-content: space-between;
+}
+.flex-wrap .col-md-8{
+  width: 90%;
 }
 #pn_id_1 .p-carousel-item{
   flex: 1 0 40% !important;
@@ -1676,7 +1690,9 @@ padding-left: 25px;
   width: 100% !important;
   
 }
-
+.single-shop-product .text-cut{
+  text-align: start;
+}
 .purchaseIcons{
   margin-left: 0px !important;
   align-self: flex-end ;
@@ -1686,7 +1702,7 @@ padding-left: 25px;
   padding: 5px 15px 150px !important;
 
 }
-.user-menu .nav {
-  justify-content: center;
-}
+
+
+
 }

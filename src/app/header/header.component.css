@@ -11,7 +11,7 @@ a:hover {
   text-decoration: underline;
 }
 ul {
-  column-gap: 25px;
+  justify-content: space-evenly;
   padding: 10px;
   text-align: center;
 }
