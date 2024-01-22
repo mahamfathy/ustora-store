@@ -112,5 +112,5 @@ footer {
   margin-bottom: unset !important;
 }
 .footer-bottom-area .col-md-5 p{
-  width: max-content !important;
+  width: 100%;
 }

@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Apple new mac book 2015 March :P",
+      "name": "Apple new mac book 2015 March",
       "src": "../assets/product-1.jpg",
       "imageName": "Apple New Mac",
       "price": 899,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "name": "Apple new mac book 2015 March :P",
+      "name": "Apple new mac book 2015 March",
       "src": "../assets/product-2.jpg",
       "imageName": "Apple New Mac",
       "price": 899,
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "name": "Apple new mac book 2021 March :P",
+      "name": "Apple new mac book 2021 March",
       "src": "../assets/product-3.jpg",
       "imageName": "Apple New Mac",
       "price": 750,
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "name": "Apple new mac book 2015 March :P",
+      "name": "Apple new mac book 2015 March",
       "src": "../assets/product-4.jpg",
       "imageName": "Apple New Mac",
       "price": 899,
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "name": "New mac March :P",
+      "name": "New mac March",
       "src": "../assets/product-1.jpg",
       "imageName": "Apple New Mac",
       "price": 450,
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "name": "Apple 2022 March :P",
+      "name": "Apple 2022 March",
       "src": "../assets/product-2.jpg",
       "imageName": "Apple New Mac",
       "price": 550,
@@ -50,7 +50,7 @@
     },
     {
       "id": 7,
-      "name": "mac book 2023 March :P",
+      "name": "mac book 2023 March",
       "src": "../assets/product-3.jpg",
       "imageName": "Apple New Mac",
       "price": 600,
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "name": "Andriod :P",
+      "name": "Andriod",
       "src": "../assets/product-4.jpg",
       "imageName": "Apple New Mac",
       "price": 499,
@@ -66,7 +66,7 @@
     },
     {
       "id": 9,
-      "name": "Apple new mac book :P",
+      "name": "Apple new mac book",
       "src": "../assets/product-1.jpg",
       "imageName": "Apple New Mac",
       "price": 899,
@@ -74,7 +74,7 @@
     },
     {
       "id": 10,
-      "name": "IPhone 2015 March :P",
+      "name": "IPhone 2015 March",
       "src": "../assets/product-2.jpg",
       "imageName": "Apple New Mac",
       "price": 600,
@@ -82,7 +82,7 @@
     },
     {
       "id": 11,
-      "name": " mac book 2020 March :P",
+      "name": " mac book 2020 March",
       "src": "../assets/product-3.jpg",
       "imageName": "Apple New Mac",
       "price": 700,
@@ -90,7 +90,7 @@
     },
     {
       "id": 12,
-      "name": "Apple new mac book 2018 :P",
+      "name": "Apple new mac book 2018",
       "src": "../assets/product-4.jpg",
       "imageName": "Apple New Mac",
       "price": 500,
