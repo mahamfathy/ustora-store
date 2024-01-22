@@ -1120,7 +1120,7 @@ div.cart-collaterals ul.products li.product .price {
   width: 360px;
 }
 #customer_details .col-6{
-  width: 48%;
+  width: 47% !important;
   margin-left: 15px;
   
 }
