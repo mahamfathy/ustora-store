@@ -1119,6 +1119,9 @@ div.cart-collaterals ul.products li.product .price {
   margin-left: 30px;
   width: 360px;
 }
+#customer_details {
+  justify-content: space-between;
+}
 #customer_details .col-6{
   width: 47% !important;
   margin-left: 15px;
@@ -1382,7 +1385,7 @@ padding-left: 15px;
     flex-direction: column;
   }
   #customer_details .col-6{
-    width: 45% !important;
+    width: 47% !important;
   }
   .footer-top-area .zigzag-bottom {
     bottom: -153px;
