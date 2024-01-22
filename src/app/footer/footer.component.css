@@ -45,6 +45,10 @@ span {
   font-family: unset;
   color: #999;
 }
+footer .row {
+  margin-right: 0px;
+  margin-right: 0px;
+}
 button {
   width: fit-content;
   border-radius: unset;
@@ -108,9 +112,9 @@ footer {
 #website:hover {
   color: #17a78b !important;
 }
-.mb-4{
+.mb-4 {
   margin-bottom: unset !important;
 }
-.footer-bottom-area .col-md-5 p{
+.footer-bottom-area .col-md-5 p {
   width: 100%;
 }

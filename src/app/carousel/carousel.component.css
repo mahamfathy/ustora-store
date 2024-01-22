@@ -68,3 +68,9 @@
   height: 32px;
   border-radius: 50%;
 }
+ 
+@media screen and (max-width:575px) {
+  ::ng-deep .carouselCContainer .p-carousel-next{
+    right: 68px !important;
+  }
+}
