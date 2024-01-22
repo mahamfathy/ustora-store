@@ -692,6 +692,9 @@ a:hover,
 a:focus {
   color: #17a78b;
 }
+.product-carousel-price{
+  text-align: start;
+}
 .footer-bottom-area {
   background: none repeat scroll 0 0 #000;
   color: #fff;
@@ -1154,6 +1157,9 @@ a.about_paypal {
   font-size: 12px;
   margin-left: 15px;
 }
+.product-carousel-price{
+  text-align: start;
+}
 
 #customer_details select,
 .shipping_calculator select {
@@ -1281,9 +1287,30 @@ padding-left: 15px;
  .header{
   right: 17% !important;
 }
+#pn_id_1 .p-carousel-item {
+  flex: 1 0 50% !important;
+}
 }
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-product-area .col-md-8,
+  .single-product-area .col-md-4{
+    width: 100%;
+  }
+  .navbar-header{
+    display: none;
+  }
+   #navbarToggleExternalContent{
+    justify-content : center ;
+
+   }
+  .nav-link{
+    margin: 0px auto !important;
+    padding: 10px !important;
+  }
+  #pn_id_1 .p-carousel-item {
+    flex: 1 0 50% !important;
+}
   .user-menu,
   .header-right ul.list-inline {
     text-align: center;
@@ -1303,15 +1330,22 @@ padding-left: 15px;
     flex-direction: column;
     align-items: center;
   }
+  .flex-wrap .col-md-8{
+    flex-direction: row;
+    display: flex;
+    width: 85% !important;
+    justify-content: center;
+  }
   .flex-wrap .col-md-4{
     flex-direction: row;
     display: flex;
-    width: 69%;
+    width: 69% !important;
     justify-content: center;
   }
   .header-right{
     width: 75%;
   }
+ 
   ul.navbar-nav li a {
     font-size: 14px;
     padding: 15px 10px;
@@ -1392,8 +1426,18 @@ padding-left: 15px;
     margin: 0px auto !important;
 
 }
-
-
+.single-product .text-cut{
+  text-align: start;
+  font-size: 20px;
+}
+.single-product-area .container{
+  max-width: 100% !important ;
+  text-align: start !important;
+}
+.p-carousel-items-container{
+  width: 255%;
+  transform: translate3d(-20%, 0px, 0px);
+}
   .single-product-area .container {
     margin: 0px auto;
     max-width: 50%;
@@ -1624,12 +1668,15 @@ padding-left: 25px;
   padding: 10px 16px!important;
   width: 100%;
 }
-
+#pn_id_1 .p-carousel-item{
+  flex: 1 0 40% !important;
+}
 .footer-bottom-area .col-md-5 p{
   margin-bottom: 3px !important;
   width: 100% !important;
   
 }
+
 .purchaseIcons{
   margin-left: 0px !important;
   align-self: flex-end ;
