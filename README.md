@@ -1,3 +1,6 @@
+#VIP Note
+Please make sure that you write down in your cmd the command of json-server --watch db.json to displauy the products
+
 # UstoraStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
