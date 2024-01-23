@@ -5,32 +5,29 @@ import { Product } from '../shared/models/Product';
   providedIn: 'root',
 })
 export class ProductsService {
-  productsApiUrl = "http://localhost:3000/products"
-   products: Product[] = [
+  productsApiUrl = 'http://localhost:3000/products';
+  products: Product[] = [];
 
-  ];
-
-  carousel:Product[]= []
+  carousel: Product[] = [];
   constructor() {}
 
- async getAllProducts():Promise<Product[]> {
-   const data= await fetch(this.productsApiUrl)
-  return await data.json()??[]
+  async getAllProducts(): Promise<Product[]> {
+    const data = await fetch(this.productsApiUrl);
+    return (await data.json()) ?? [];
   }
- async getProductById(id:number):Promise<Product|undefined>{
-  const data = await fetch(`${this.productsApiUrl}/${id}`)
-  
-  return await data.json()?? {}
+  async getProductById(id: number): Promise<Product | undefined> {
+    const data = await fetch(`${this.productsApiUrl}/${id}`);
 
-
-}
-getTotalProductsPrice(): number {
-  return this.products.reduce((total, product) => total + product.price, 0);
-}
-async getCarouselInfo(): Promise<Product[]> {
-  if (this.carousel.length === 0) {
-    const allProducts = await this.getAllProducts();
-    this.carousel = allProducts.slice(0, 6);
+    return (await data.json()) ?? {};
   }
-  return this.carousel;
-}}
+  getTotalProductsPrice(): number {
+    return this.products.reduce((total, product) => total + product.price, 0);
+  }
+  async getCarouselInfo(): Promise<Product[]> {
+    if (this.carousel.length === 0) {
+      const allProducts = await this.getAllProducts();
+      this.carousel = allProducts.slice(0, 6);
+    }
+    return this.carousel;
+  }
+}

@@ -15,15 +15,14 @@ export class HeaderComponent implements OnInit {
   ustoraImage: string = 'assets/logo.png';
   totalPrice: number = 0;
   count: number = 0;
- 
+
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    this.updateTotalPrice();
+    this.updateCartInfo();
 
-    // Subscribe to cart updates
     this.cartService.getCartUpdateObservable().subscribe(() => {
-      this.updateTotalPrice();
+      this.updateCartInfo();
     });
   }
 
@@ -31,9 +30,10 @@ export class HeaderComponent implements OnInit {
     this.cartService.addToCart(product);
   }
 
-  private updateTotalPrice(): void {
+  private updateCartInfo(): void {
     const cart = this.cartService.getCart();
-    this.totalPrice = cart.items.length > 0 ? this.cartService.getTotalPrice() : 0;
+    this.totalPrice =
+      cart.items.length > 0 ? this.cartService.getTotalPrice() : 0;
     this.count = cart.items.length;
   }
 }

@@ -41,7 +41,7 @@ export class HomePageComponent implements OnInit {
     {
       src: 'assets/brand6.png',
       imageName: 'image 6',
-    }
+    },
   ];
   responsiveOptions = [
     {
@@ -51,6 +51,5 @@ export class HomePageComponent implements OnInit {
     },
   ];
   constructor() {}
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

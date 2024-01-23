@@ -14,6 +14,6 @@ export class CartItem {
   }
 
   get imageUrl(): string {
-    return this.product.src; // Adjust this according to your actual property name for the image URL
+    return this.product.src; 
   }
 }

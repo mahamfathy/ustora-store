@@ -8,12 +8,12 @@ import { ProductsService } from '../services/products.service';
 @Component({
   selector: 'app-latest-products',
   standalone: true,
-  imports: [CarouselModule,ButtonModule,RouterLink],
+  imports: [CarouselModule, ButtonModule, RouterLink],
   templateUrl: './latest-products.component.html',
   styleUrl: './latest-products.component.css',
 })
-export class LatestProductsComponent implements OnInit{
-  products:Product[] = [];
+export class LatestProductsComponent implements OnInit {
+  products: Product[] = [];
   responsiveOptions = [
     {
       breakpoint: '1600px',
@@ -21,12 +21,17 @@ export class LatestProductsComponent implements OnInit{
       numScroll: 5,
     },
   ];
-  constructor(private cartService:CartService,private productService:ProductsService){}
+  constructor(
+    private cartService: CartService,
+    private productService: ProductsService
+  ) {}
   ngOnInit(): void {
-    this.productService.getCarouselInfo().then(carousel=>this.products=carousel)
+    this.productService
+      .getCarouselInfo()
+      .then((carousel) => (this.products = carousel));
   }
 
-  addToCart(item:Product){
-    this.cartService.addToCart(item)
+  addToCart(item: Product) {
+    this.cartService.addToCart(item);
   }
 }
