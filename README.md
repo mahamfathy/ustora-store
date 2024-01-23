@@ -1,5 +1,5 @@
 # VIP Note
-Please make sure that you write down in your cmd the command of json-server --watch db.json to displauy the products
+Please make sure that you write down in your cmd the command of json-server --watch db.json to display the products.
 
 # UstoraStore
 
